@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --gold: #f59e0b;
+    --zinc-950: #050505;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--zinc-950);
+    color: #fafafa;
+    font-size: 13px;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #18181b;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-zinc-900/40 border border-white/5 rounded-2xl backdrop-blur-md;
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  }
+
+  .shine {
+    animation: shine 3s infinite;
+  }
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
