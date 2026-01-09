@@ -1,0 +1,9 @@
+{
+  "name": "BarberPro SaaS - Sistema de Agendamento Premium",
+  "description": "Uma plataforma SaaS completa e sofisticada para barbearias, com agendamento de clientes, gestão de funcionários e um painel administrativo avançado com insights inteligentes.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
